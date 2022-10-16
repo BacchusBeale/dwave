@@ -4,7 +4,7 @@ from dimod.reference.samplers import ExactSolver
 import dwave_networkx as dnx
 from dwave.system import DWaveSampler, EmbeddingComposite
 
-mytoken = settings.apitoken
+mytoken = settings.getToken()
 
 import networkx as nx
 s5 = nx.star_graph(4)

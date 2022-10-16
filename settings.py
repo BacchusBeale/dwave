@@ -1,1 +1,7 @@
-apitoken="DEV-d1ae4955de5b1d1ae019be4f487a9272aff81fc5"
+import yaml
+
+def getToken():
+    apitoken=""
+    with open('./data/settings.yml', 'r') as file:
+        data = yaml.safe_load(file)
+        apitoken = data["apitoken"]
